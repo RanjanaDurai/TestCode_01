@@ -1,0 +1,27 @@
+
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+
+@"
+# NuGet
+**/packages/*
+!**/[Pp]ackages/build/
+*.nupkg
+*.snupkg
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/
+**/playwright/.cache/
+
+# Binaries & Build
+bin/
+obj/
+" | Out-File .gitignore -Encoding utf8 -Force
